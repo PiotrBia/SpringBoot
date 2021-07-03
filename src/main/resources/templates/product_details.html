@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" th:href="@{/css/product.css}">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:replace="fragment :: menu"/>
+
+<div>Product's details:</div>
+<div th:text="${myTShirt.name}"></div>
+<div th:text="${myTShirt.description}"></div>
+<div th:text="${myTShirt.price}"></div>
+</body>
+</html>

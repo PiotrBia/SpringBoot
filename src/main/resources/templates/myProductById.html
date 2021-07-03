@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" th:href="@{/css/product.css}">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:replace="fragment :: menu"/>
+
+<div>Product with given ID:</div>
+
+<div th:text="${myProduct.name}"></div>
+<div th:text="${myProduct.description}"></div>
+<div th:text="${myProduct.price}"></div>
+<div><img th:src="@{/images/{image} (image=${myProduct.imageName})}"></div>
+<a th:href="@{/addtocart/{id} (id=${myProduct.id})}">Add to cart</a>
+
+</body>
+</html>

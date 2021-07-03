@@ -1,0 +1,10 @@
+  body {
+    background-color: lightsteelblue;
+    /* background: linear-gradient(#e66465, #9198e5) no-repeat; */
+    background: linear-gradient(#3f87a6, #ebf8e1);
+    font-family: "Poppins", sans-serif;
+    /* vh = viewport height, 1vh = 1% viewport height */
+    height: 100vh;
+    color: gainsboro;
+    font-size: 18px;
+  }
